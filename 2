@@ -1,0 +1,57 @@
+class Car:  
+    def __init__(self, make, model, year):  
+         self.make = make  
+         self.model = model  
+         self.year = year  
+   def start(self):  
+         print(f"{self.make} {self.model} is star ng.")  
+   def stop(self): print(f"{self.make} {self.model} is stopping.")  
+my_car = Car("Toyota","Corolla",2020)  
+my_car.start()  
+my_car.stop()  
+
+
+
+class Animal:  
+def speak(self):  
+print("Animal makes a sound")  
+class Dog(Animal):  
+def speak(self):  
+print("Dog barks")  
+class Cat(Animal):  
+def speak(self):  
+print("Cat meows")  
+dog = Dog()  
+cat = Cat()  
+
+
+
+
+
+class Animal:  
+     def make_sound(self):  
+          print("Some sound")  
+class Dog(Animal):  
+     def make_sound(self):  
+          print("Bark")  
+class Cat(Animal):  
+     def make_sound(self):  
+          print("Meow")  
+class Bird(Animal):  
+    def make_sound(self):  
+         print("Chirp")  
+animals=[Dog(),Cat(),Bird()]  
+for animal in animals:  
+    animal.make_sound()  
+
+
+try:  
+num1=int(input("Enter numerator: "))  
+num2=int(input("Enter denominator: "))  
+result=num1/num2  
+print("Result:",result)  
+except ZeroDivisionError:  
+print("Error: Division by zero is not allowed.")  
+ 
+dog.speak()  
+cat.speak()
